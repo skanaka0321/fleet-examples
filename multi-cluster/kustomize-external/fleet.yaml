@@ -1,6 +1,6 @@
 namespace: fleet-mc-kustomize-external-example
 targetCustomizations:
-- name: dev
+- name: local
   clusterSelector:
     matchLabels:
       env: dev
