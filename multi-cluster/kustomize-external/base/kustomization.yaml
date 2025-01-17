@@ -1,0 +1,2 @@
+resources:
+- https://github.com/rancher/fleet-examples.git//multi-cluster/kustomize/base?ref=master&timeout=60&submodules=false

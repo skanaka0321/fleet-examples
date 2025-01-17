@@ -1,2 +1,2 @@
-patchesStrategicMerge:
+patches:
 - frontend-deployment.yaml
