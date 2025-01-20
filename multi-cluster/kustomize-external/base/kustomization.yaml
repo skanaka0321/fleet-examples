@@ -1,2 +1,2 @@
 resources:
-- "https://github.com/rancher/fleet-examples.git//multi-cluster/kustomize/base?ref=master"
+- "git::http://github.com/rancher/fleet-examples//single-cluster/helm"
