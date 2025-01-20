@@ -1,0 +1,14 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: awx-production
+# spec:
+#   defaultBackend:
+#     service:
+#       name: awx-production-service
+#       port:
+#         number: 80
+# status:
+#   loadBalancer:
+#     ingress:
+#     - ip: 172.30.36.146

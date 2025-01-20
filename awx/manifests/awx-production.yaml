@@ -1,0 +1,42 @@
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx-production
+spec:
+  service_type: nodeport
+  image_version: 24.5.0
+  postgres_configuration_secret: awx-production-postgres-configuration
+  old_postgres_configuration_secret: awx-production-old-postgres-configuration
+  admin_password_secret: awx-production-admin-password
+  secret_key_secret: awx-production-secret-key
+  web_resource_requirements:
+    limits:
+      memory: 23Gi
+  web_extra_env: |
+    - name: GIT_SSL_NO_VERIFY
+      value: "True"
+    - name: HTTP_PROXY
+      value: ""
+    - name: HTTPS_PROXY
+      value: ""
+    - name: NO_PROXY
+      value: ""
+  task_extra_env: |
+    - name: GIT_SSL_NO_VERIFY
+      value: "True"
+    - name: HTTP_PROXY
+      value: ""
+    - name: HTTPS_PROXY
+      value: ""
+    - name: NO_PROXY
+      value: ""
+  ee_extra_env: |
+    - name: GIT_SSL_NO_VERIFY
+      value: "True"
+    - name: HTTP_PROXY
+      value: ""
+    - name: HTTPS_PROXY
+      value: ""
+    - name: NO_PROXY
+      value: ""

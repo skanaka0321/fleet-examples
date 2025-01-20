@@ -1,0 +1,5 @@
+namespace: awx
+
+kustomize:
+  # ルートにあるkustomization.yaml以外を指定する場合は明示する
+  dir: ""
