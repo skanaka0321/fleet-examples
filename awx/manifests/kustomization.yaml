@@ -4,7 +4,7 @@ resources:
   # Find the latest tag here: https://github.com/ansible/awx-operator/releases
   #- github.com/ansible/awx-operator/config/default?ref=2.18.0
   #- github.com/ansible/awx-operator//config/default?ref=2.18.0
-  - git::http://github.com/rancher/fleet-examples//single-cluster/helm
+  - "git::http://github.com/rancher/fleet-examples//single-cluster/helm"
   - awx-production.yaml
 
 # Set the image tags to match the git version from above
